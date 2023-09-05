@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- [Frontend Mentor solution]()
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/responsive-interactive-card-form-with-mobilefirst-approach-Ndg_p0Wm4N)
 - [GitHub repo](https://github.com/RoksolanaVeres/Interactive-card-details-form)
 - [Live Site](https://roksolanaveres.github.io/Interactive-card-details-form/)
 
@@ -52,6 +52,10 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
+
+- learned some regex
+- practiced positioning
+- did loader
 
 ## Author
 
