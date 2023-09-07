@@ -101,11 +101,7 @@ function validateCardNumber() {
 
 function validateNumberFormat() {
   if (!/^(\d{4}\s{1}){3}\d{4}$/.test(cardNumberInput.value)) {
-    showError(
-      numberError,
-      "Wrong format! 16 digits and spaces between each 4 digits required!",
-      cardNumberInput
-    );
+    showError(numberError, "Wrong format!", cardNumberInput);
     return false;
   }
   return true;

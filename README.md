@@ -55,7 +55,7 @@ Users should be able to:
 
 - learned some regex
 - practiced positioning
-- did loader
+- made loader
 
 ## Author
 

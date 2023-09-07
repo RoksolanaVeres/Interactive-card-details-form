@@ -39,7 +39,7 @@ body {
   text-transform: uppercase;
   font-size: 1.2rem;
   display: block;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   letter-spacing: 0.2rem;
 }
 
@@ -49,7 +49,7 @@ body {
   font-size: 1.5rem;
   font-family: "Space Grotesk", sans-serif;
   padding: 0 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   border: 1px solid var(--light-grayish-violet);
   border-radius: 0.5em;
 }
@@ -100,8 +100,8 @@ body {
 .error {
   font-size: 1rem;
   color: var(--error);
-  margin-bottom: 2.5em;
-  margin-top: -1em;
+  position: absolute;
+  bottom: 8px;
 }
 
 /* cards */
@@ -169,7 +169,7 @@ body {
 
 /* form */
 .form-container {
-  padding: 5em 1.4em 2.5em;
+  padding: 5em 1.4em 0;
 }
 
 .form {
@@ -177,8 +177,16 @@ body {
   position: relative;
 }
 
+.cardholder-name__container {
+  position: relative;
+}
+
 .cardholder-name-input {
   width: 100%;
+}
+
+.card-number__container {
+  position: relative;
 }
 
 .card-number-input {
@@ -197,6 +205,7 @@ body {
 }
 
 .exp-date__container {
+  position: relative;
   flex: 1;
 }
 
@@ -209,6 +218,7 @@ body {
 }
 
 .cvc__container {
+  position: relative;
   flex: 1;
 }
 
@@ -247,10 +257,14 @@ body {
 .attribution {
   font-size: 1.1rem;
   text-align: center;
+  height: 4em;
+  display: grid;
+  place-content: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
 
 /* overlay-spinner-container */
@@ -379,6 +393,10 @@ body {
     gap: 10px;
     justify-content: space-between;
   }
+
+  .error {
+    bottom: 12px;
+  }
 }
 
 @media (min-width: 365px) {
@@ -430,7 +448,7 @@ body {
   }
 
   .form-container {
-    padding: 10em 5em 2.5em;
+    padding: 10em 5em 0;
   }
 
   .completed-form__container {
@@ -444,6 +462,7 @@ body {
 
 @media (min-width: 1000px) {
   .label {
+    padding-bottom: 1em;
     font-size: 1.6rem;
   }
 
@@ -479,7 +498,7 @@ body {
   .form-container {
     padding: 0 5% 0 0;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 4em);
   }
 
   .form {
@@ -489,7 +508,7 @@ body {
 
   .completed-form__container {
     padding: 0 5% 0 0;
-    height: 100vh;
+    height: calc(100vh - 4em);
   }
 
   .success-text__container {
@@ -499,6 +518,15 @@ body {
 
   .continue-button {
     width: 100%;
+  }
+
+  .error {
+    font-size: 1.2rem;
+    bottom: 12px;
+  }
+
+  .attribution {
+    font-size: 1.5rem;
   }
 }
 
